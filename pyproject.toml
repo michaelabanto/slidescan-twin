@@ -1,0 +1,21 @@
+[project]
+name = "slidescan-twin"
+version = "0.1.0"
+description = "Slide-scanning experiments on Lucien Hinderling's virtual microscope"
+requires-python = ">=3.10"
+dependencies = [
+  "virtual-microscope @ git+https://github.com/hinderling/virtual-microscope",
+  "numpy",
+  "opencv-python-headless",
+  "matplotlib",
+  "scikit-learn",
+  "umap-learn",
+  "imageio[ffmpeg]",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["slidescan_twin"]
